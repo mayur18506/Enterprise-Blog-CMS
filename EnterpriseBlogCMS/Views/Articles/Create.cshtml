@@ -1,0 +1,24 @@
+﻿@model EnterpriseBlogCMS.Models.Article
+
+<div class="container mt-4" style="max-width: 700px;">
+    <h3 class="fw-bold mb-3">Publish New Article</h3>
+    <form asp-action="Create" method="post" class="card p-4 shadow-sm">
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Article Title</label>
+            <input asp-for="Title" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Category</label>
+            <select asp-for="Category" class="form-select">
+                <option value="Technology">Technology</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Cloud & AI">Cloud & AI</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Content</label>
+            <textarea asp-for="Content" rows="5" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Publish Article</button>
+    </form>
+</div>
