@@ -19,4 +19,4 @@ An end-to-end content management platform built with an ASP.NET Core MVC backend
 2. Update the SQL Server connection string in `appsettings.json`.
 3. Open **Package Manager Console** in Visual Studio and run:
    ```powershell
-   Update-Database
+   Update-Database 
